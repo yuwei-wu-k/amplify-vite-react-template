@@ -1,42 +1,92 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
+  background-color: #8a2be2; /* Vibrant purple background */
+  color: white; /* White text for contrast */
+  font-family: 'Arial', sans-serif; /* Modern, readable font */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App-header {
+  background-color: #8a2be2;
+  padding: 20px;
+  color: white; /* Ensures text is white as in the screenshot */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-nav {
+  background: transparent;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.nav-link {
+  color: #ffdb4d; /* Light yellow color for contrast */
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.card {
-  padding: 2em;
+.nav-link:hover, .nav-link.active {
+  background-color: #ffffff; /* White background on hover and active */
+  color: #8a2be2; /* Purple text when active or hovered */
+  border-radius: 5px;
 }
 
-.read-the-docs {
-  color: #888;
+.nav-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  color: #ffdb4d; /* Yellow color for links */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.App-main {
+  padding: 50px 20px;
+  text-align: left;
+  margin: auto;
+  width: 80%;
+}
+
+button {
+  background-color: #ffdb4d; /* Yellow button */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block; /* Make the button a block element to fill width */
+  width: 200px; /* Set a specific width */
+  margin-left: auto; /* Center the button horizontally */
+  margin-right: auto;
+}
+
+button:hover {
+  background-color: #e0c042;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
